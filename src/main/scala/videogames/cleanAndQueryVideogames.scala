@@ -18,7 +18,7 @@ object cleanAndQueryVideogames {
 
     //Visualizar el DataFrame tal antes de estructurarlo.
     df.show(10, truncate = false)
-    
+
     //Inferir esquema y añadir opciones
     val gamesdf = spark.read.format("csv")
       .option("header", "true")
